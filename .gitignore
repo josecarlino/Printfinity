@@ -1,0 +1,12 @@
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+
+# Claude Code session config (local to this machine/session)
+.claude/
+
+# Build artifacts / packaged output
+*.zip
