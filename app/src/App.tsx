@@ -4,6 +4,7 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 import { LoginPage } from "./pages/LoginPage";
 import { OrdersPage } from "./pages/OrdersPage";
 import { CalculatorPage } from "./pages/CalculatorPage";
+import { AnalyticsPage } from "./pages/AnalyticsPage";
 
 export default function App() {
   return (
@@ -24,6 +25,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <CalculatorPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/analitica"
+            element={
+              <ProtectedRoute>
+                <AnalyticsPage />
               </ProtectedRoute>
             }
           />

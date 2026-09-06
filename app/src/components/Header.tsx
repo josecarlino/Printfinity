@@ -26,6 +26,9 @@ export function Header() {
           <NavLink to="/calculadora" className={navLinkClass}>
             Calculadora
           </NavLink>
+          <NavLink to="/analitica" className={navLinkClass}>
+            Analítica
+          </NavLink>
         </nav>
         <div className="relative">
           <button

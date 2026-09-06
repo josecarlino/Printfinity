@@ -71,6 +71,13 @@
   --color-status-new-bg: rgba(239, 68, 68, 0.15);
   --color-status-new-border: rgba(239, 68, 68, 0.25);
 
+  /* Escala de 5 tramos para la barra de recuperacion de Analitica */
+  --color-tier1: #7a0c14;
+  --color-tier2: #ef233c;
+  --color-tier3: #ff7a00;
+  --color-tier4: #2ea043;
+  --color-tier5: #1f6feb;
+
   /* Tipografia (fontFamily siempre inter, ver --font-sans arriba) */
   --text-display: 36px;
   --text-display--line-height: 44px;
