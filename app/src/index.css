@@ -177,6 +177,14 @@
     overscroll-behavior: none;
   }
 
+  /* Por defecto las celdas alinean su contenido a "baseline"; una celda
+     vacia y una con un icono/badge tienen baselines distintas, lo que
+     puede cambiar el alto de toda la fila segun su contenido. */
+  td,
+  th {
+    vertical-align: middle;
+  }
+
   input[type="date"] {
     color-scheme: dark;
   }

@@ -256,7 +256,11 @@ export function OrdersPage() {
                                 : "bg-surface-subtle border-border text-text-secondary"
                             }`}
                           >
-                            {order.paid && <span className="material-symbols-outlined text-sm font-bold">check</span>}
+                            {order.paid && (
+                              <span className="material-symbols-outlined text-sm! font-bold leading-none!">
+                                check
+                              </span>
+                            )}
                           </span>
                         </td>
                       </tr>
