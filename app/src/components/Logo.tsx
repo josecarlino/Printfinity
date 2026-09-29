@@ -10,7 +10,13 @@ interface LogoProps {
 export function Logo({ size = 28, showName = true }: LogoProps) {
   return (
     <div className="flex items-center gap-sm">
-      <img src="/logo.svg" alt="Printfinity" width={size} height={size} className="rounded" />
+      <img
+        src={`${import.meta.env.BASE_URL}logo.svg`}
+        alt="Printfinity"
+        width={size}
+        height={size}
+        className="rounded"
+      />
       {showName && (
         <span className="font-sans text-headline-sm text-text-primary tracking-tight">
           Printfinity
