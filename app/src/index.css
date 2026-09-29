@@ -164,6 +164,13 @@
     padding: 0;
   }
 
+  html {
+    /* Reserva siempre el ancho de la barra de scroll vertical, para que el
+       header (fixed + centrado) no se desplace entre paginas segun cual
+       tenga o no scroll. */
+    scrollbar-gutter: stable;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-text-primary);

@@ -171,28 +171,28 @@ export function OrdersPage() {
 
           <div className="w-full bg-surface rounded-xl overflow-hidden">
             <div className="w-full overflow-x-auto">
-              <table className="w-full text-left border-collapse min-w-[720px]">
+              <table className="w-full table-fixed text-left border-collapse min-w-[720px]">
                 <thead>
                   <tr className="bg-surface-subtle/50">
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary w-16">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary w-[6%]">
                       N°
                     </th>
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary w-[20%]">
                       Cliente
                     </th>
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary w-[26%]">
                       Impresión 3D
                     </th>
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary w-[14%]">
                       Fecha de entrega
                     </th>
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary w-[13%]">
                       Estado
                     </th>
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary text-right">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary text-right w-[12%]">
                       Precio
                     </th>
-                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary text-center">
+                    <th className="py-md px-lg font-sans text-table-header uppercase text-text-secondary text-center w-[9%]">
                       Pago
                     </th>
                   </tr>
@@ -230,10 +230,15 @@ export function OrdersPage() {
                         <td className="py-md px-lg font-sans text-label-md text-text-secondary font-mono">
                           {orderNumbers.get(order.id)}
                         </td>
-                        <td className="py-md px-lg font-sans text-label-md text-text-primary group-hover:text-primary">
+                        <td
+                          className="py-md px-lg font-sans text-label-md text-text-primary group-hover:text-primary truncate"
+                          title={order.client}
+                        >
                           {order.client}
                         </td>
-                        <td className="py-md px-lg font-sans text-body-md text-on-surface">{order.piece}</td>
+                        <td className="py-md px-lg font-sans text-body-md text-on-surface truncate" title={order.piece}>
+                          {order.piece}
+                        </td>
                         <td className="py-md px-lg font-sans text-body-sm text-text-secondary font-mono">
                           {formatDate(order.due_date)}
                         </td>
